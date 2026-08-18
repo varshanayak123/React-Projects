@@ -2,19 +2,17 @@ import React from 'react'
 
 const AlbumCard = ({ album }) => {
   return (
-    <div className='bg-zinc-950 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-300'>
+    <div className='bg-black rounded-xl overflow-hidden shadow-lg h-[340px] hover:scale-105 transition-transform duration-300'>
 
-      {/* Album Image */}
       <img
         src={album.image}
-        alt={album.name}
-        className='w-full aspect-square object-cover'
+        alt='Album'
+        className='w-full h-45 object-cover'
       />
 
-      {/* Album Details */}
-      <div className='p-3'>
+      <div className='p-4'>
 
-        <h2 className='text-white text-base font-bold truncate'>
+        <h2 className='text-white text-lg font-bold truncate'>
           {album.name}
         </h2>
 
@@ -22,11 +20,14 @@ const AlbumCard = ({ album }) => {
           {album.artist}
         </p>
 
-        <p className='text-gray-500 text-xs mt-1'>
+        <p className='text-gray-500 text-sm mt-1'>
           {album.date}
         </p>
 
-        <button className='mt-3 w-full bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg transition'>
+        <button
+          onClick={() => window.open(album.spotifyUrl, '_blank')}
+          className='mt-4 w-full bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg transition'
+        >
           🎧 Open in Spotify
         </button>
 

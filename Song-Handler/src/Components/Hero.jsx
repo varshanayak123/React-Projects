@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='bg-black pt-28 py-20 px-5 text-center'>
+    <div className='pt-24 py-20 px-5 text-center'>
 
       <h1 className='text-5xl font-bold text-white'>
         Find Your Favorite Music
@@ -21,7 +21,7 @@ const Hero = () => {
             className='flex-1 px-6 py-4 outline-none text-gray-700'
           />
 
-          <button className='px-7 py-4 bg-red-700 text-white font-semibold border-none hover:bg-red-800 transition'>
+          <button className='px-7 py-4 bg-red-800 text-white font-semibold border-none hover:bg-red-700 transition'>
             Search
           </button>
 

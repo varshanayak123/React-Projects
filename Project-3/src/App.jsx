@@ -8,6 +8,8 @@ const App = () => {
 
   const [index, setIndex] = useState(1)
 
+  const [loading, setLoading] = useState(false)
+
   const datacome = async () =>{
 
   const response =await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=15`)

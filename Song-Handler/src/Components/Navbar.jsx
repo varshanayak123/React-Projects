@@ -3,10 +3,10 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-   <div className='fixed top-3 left-8 right-8 z-50 flex py-2.5 px-7 justify-between items-center bg-red-700/90 backdrop-blur-md text-white rounded-xl shadow-lg'>
+   <div className='fixed top-0 left-0 right-0 z-50 flex py-3 px-10 justify-between items-center backdrop-blur-md text-white '>
       <div className='flex items-center gap-3'>
         <img className='h-12 w-12 rounded-full object-cover' src="/src/Images/Music-Logo.jpg" alt="" />
-        <span>Mae</span>
+        <span className='font-bold'>Mae</span>
       </div>
         <div className='flex gap-8 items-center'>
             <a href='#' className='text-lg font-bold hover:text-yellow-200 transition'>Home</a>
